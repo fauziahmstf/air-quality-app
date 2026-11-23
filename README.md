@@ -6,20 +6,20 @@
 
 ---
 
-## 👤 Author
+##  Author
 
 | Informasi | Keterangan |
 |---|---|
 | Nama | Nurul Fauziah Mustafa |
 | NIM | D121241035 |
-| Program Studi | Teknik Informatika |
+| Departemen | Teknik Informatika |
 | Fakultas | Teknik |
 | Universitas | Universitas Hasanuddin |
 | Angkatan | 2024 |
 
 ---
 
-## ✨ Features
+##  Features
 
 | Fitur | Deskripsi |
 |---|---|
@@ -32,7 +32,7 @@
 
 ---
 
-## 🛠️ Technologies
+##  Technologies
 
 - **Framework:** Flutter
 - **Programming Language:** Dart
@@ -42,7 +42,7 @@
 
 ---
 
-## 🌐 API
+##  API
 
 Aplikasi menggunakan layanan Open-Meteo API.
 
@@ -53,7 +53,7 @@ Aplikasi menggunakan layanan Open-Meteo API.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 lib/
@@ -72,7 +72,7 @@ lib/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 **1. Clone repository**
 
@@ -100,7 +100,7 @@ flutter run
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Jalankan perintah berikut untuk memeriksa kode dan menjalankan pengujian:
 
@@ -111,7 +111,7 @@ flutter test
 
 ---
 
-## 📦 Build APK
+##  Build APK
 
 Untuk membuat aplikasi versi release:
 
