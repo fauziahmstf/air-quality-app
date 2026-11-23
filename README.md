@@ -1,63 +1,61 @@
-Air Quality App
+# Air Quality App
 
-Aplikasi mobile berbasis Flutter untuk mencari dan memantau kualitas udara berdasarkan kota. Aplikasi menampilkan nilai Air Quality Index (AQI) beserta informasi beberapa polutan udara.
+<p align="center">
+  Aplikasi mobile berbasis Flutter untuk mencari dan memantau kualitas udara berdasarkan kota.
+</p>
 
-Author
+---
 
-Nama: Nurul Fauziah Mustafa
+## 👤 Author
 
-NIM: D121241035
+| Informasi | Keterangan |
+|---|---|
+| Nama | Nurul Fauziah Mustafa |
+| NIM | D121241035 |
+| Program Studi | Teknik Informatika |
+| Fakultas | Teknik |
+| Universitas | Universitas Hasanuddin |
+| Angkatan | 2024 |
 
-Program Studi: Teknik Informatika
+---
 
-Fakultas: Teknik
+## ✨ Features
 
-Universitas: Universitas Hasanuddin
+| Fitur | Deskripsi |
+|---|---|
+| City Search | Mencari kualitas udara berdasarkan nama kota. |
+| Air Quality Index (AQI) | Menampilkan nilai dan kategori kualitas udara. |
+| Pollutant Information | Menampilkan PM2.5, PM10, CO, NO2, dan O3. |
+| Asynchronous Data Fetching | Menggunakan FutureBuilder untuk menangani loading, success, dan error. |
+| Local Storage | Menyimpan kota terakhir menggunakan SharedPreferences. |
+| Automatic Last Search | Memuat kembali kota terakhir saat aplikasi dibuka. |
 
-Angkatan: 2024
+---
 
-Features
+## 🛠️ Technologies
 
-City Search: Mencari informasi kualitas udara berdasarkan nama kota.
+- **Framework:** Flutter
+- **Programming Language:** Dart
+- **API Communication:** REST API, HTTP
+- **Local Storage:** SharedPreferences
+- **Asynchronous UI:** FutureBuilder
 
-Air Quality Index (AQI): Menampilkan nilai dan kategori kualitas udara.
+---
 
-Pollutant Information: Menampilkan informasi PM2.5, PM10, Carbon Monoxide (CO), Nitrogen Dioxide (NO2), dan Ozone (O3).
+## 🌐 API
 
-Asynchronous Data Fetching: Menggunakan FutureBuilder untuk menangani proses loading, success, dan error.
+Aplikasi menggunakan layanan Open-Meteo API.
 
-Local Storage: Menyimpan kota terakhir yang dicari menggunakan SharedPreferences.
+| API | Kegunaan |
+|---|---|
+| [Geocoding API](https://geocoding-api.open-meteo.com/v1/search) | Mencari koordinat berdasarkan nama kota. |
+| [Air Quality API](https://air-quality-api.open-meteo.com/v1/air-quality) | Mengambil data kualitas udara dan polutan. |
 
-Automatic Last Search: Menampilkan kembali data berdasarkan kota terakhir yang dicari saat aplikasi dibuka.
+---
 
-Technologies
+## 📁 Project Structure
 
-Flutter
-
-Dart
-
-REST API
-
-HTTP
-
-SharedPreferences
-
-FutureBuilder
-
-API
-
-Aplikasi menggunakan Open-Meteo API untuk memperoleh data lokasi dan kualitas udara.
-
-Geocoding API: Digunakan untuk mencari koordinat berdasarkan nama kota.
-
-https://geocoding-api.open-meteo.com/v1/search
-
-Air Quality API: Digunakan untuk memperoleh informasi kualitas udara dan polutan.
-
-https://air-quality-api.open-meteo.com/v1/air-quality
-
-Project Structure
-
+```text
 lib/
 ├── main.dart
 ├── models/
@@ -70,42 +68,65 @@ lib/
 └── widgets/
     ├── aqi_card.dart
     └── search_field.dart
+```
 
-Installation and Setup
+---
 
-Clone repository:
+## 🚀 Installation
 
+**1. Clone repository**
+
+```bash
 git clone https://github.com/fauziahmstf/air-quality-app.git
+```
 
-Masuk ke direktori project:
+**2. Masuk ke direktori project**
 
+```bash
 cd air-quality-app
+```
 
-Install dependencies:
+**3. Install dependencies**
 
+```bash
 flutter pub get
+```
 
-Jalankan aplikasi:
+**4. Jalankan aplikasi**
 
+```bash
 flutter run
+```
 
-Testing
+---
+
+## 🧪 Testing
 
 Jalankan perintah berikut untuk memeriksa kode dan menjalankan pengujian:
 
+```bash
 flutter analyze
 flutter test
+```
 
-Build APK
+---
 
-Untuk membuat APK versi release:
+## 📦 Build APK
 
+Untuk membuat aplikasi versi release:
+
+```bash
 flutter build apk --release
+```
 
-File APK akan tersedia di:
+Lokasi file APK:
 
+```text
 build/app/outputs/flutter-apk/app-release.apk
+```
 
-License
+---
 
-This project was developed for an individual Mobile Programming course assignment.
+<p align="center">
+  <sub>Developed as an individual Mobile Programming course assignment.</sub>
+</p>
