@@ -1,38 +1,63 @@
-# Air Quality App
+Air Quality App
 
-Aplikasi mobile berbasis Flutter untuk memantau kualitas udara berdasarkan lokasi kota yang dicari pengguna. Aplikasi mengambil data kualitas udara melalui REST API dan menampilkan Air Quality Index (AQI) beserta informasi beberapa polutan udara.
+Aplikasi mobile berbasis Flutter untuk mencari dan memantau kualitas udara berdasarkan kota. Aplikasi menampilkan nilai Air Quality Index (AQI) beserta informasi beberapa polutan udara.
 
-## Features
+Author
 
-- **City Search:** Mencari informasi kualitas udara berdasarkan nama kota.
-- **Air Quality Index (AQI):** Menampilkan nilai AQI dan kategori kualitas udara.
-- **Pollutant Information:** Menampilkan kadar PM2.5, PM10, Carbon Monoxide, Nitrogen Dioxide, dan Ozone.
-- **Asynchronous Data Loading:** Menggunakan FutureBuilder untuk menangani proses loading, success, dan error.
-- **Local Storage:** Menggunakan SharedPreferences untuk menyimpan nama kota terakhir yang dicari.
-- **Last Search:** Menampilkan kembali kota terakhir ketika aplikasi dibuka ulang.
+Nama: Nurul Fauziah Mustafa
 
-## Technologies Used
+NIM: D121241035
 
-- Flutter
-- Dart
-- REST API
-- HTTP Package
-- SharedPreferences
-- Android Emulator
+Program Studi: Teknik Informatika
 
-## API Used
+Fakultas: Teknik
 
-Aplikasi menggunakan Open-Meteo API untuk memperoleh informasi lokasi dan kualitas udara.
+Universitas: Universitas Hasanuddin
 
-1. **Geocoding API:** Mencari koordinat latitude dan longitude berdasarkan nama kota.
-   - https://geocoding-api.open-meteo.com/v1/search
+Angkatan: 2024
 
-2. **Air Quality API:** Mengambil data kualitas udara berdasarkan koordinat lokasi.
-   - https://air-quality-api.open-meteo.com/v1/air-quality
+Features
 
-## Project Structure
+City Search: Mencari informasi kualitas udara berdasarkan nama kota.
 
-```text
+Air Quality Index (AQI): Menampilkan nilai dan kategori kualitas udara.
+
+Pollutant Information: Menampilkan informasi PM2.5, PM10, Carbon Monoxide (CO), Nitrogen Dioxide (NO2), dan Ozone (O3).
+
+Asynchronous Data Fetching: Menggunakan FutureBuilder untuk menangani proses loading, success, dan error.
+
+Local Storage: Menyimpan kota terakhir yang dicari menggunakan SharedPreferences.
+
+Automatic Last Search: Menampilkan kembali data berdasarkan kota terakhir yang dicari saat aplikasi dibuka.
+
+Technologies
+
+Flutter
+
+Dart
+
+REST API
+
+HTTP
+
+SharedPreferences
+
+FutureBuilder
+
+API
+
+Aplikasi menggunakan Open-Meteo API untuk memperoleh data lokasi dan kualitas udara.
+
+Geocoding API: Digunakan untuk mencari koordinat berdasarkan nama kota.
+
+https://geocoding-api.open-meteo.com/v1/search
+
+Air Quality API: Digunakan untuk memperoleh informasi kualitas udara dan polutan.
+
+https://air-quality-api.open-meteo.com/v1/air-quality
+
+Project Structure
+
 lib/
 ├── main.dart
 ├── models/
@@ -46,64 +71,41 @@ lib/
     ├── aqi_card.dart
     └── search_field.dart
 
-test/
-└── widget_test.dart
-```
+Installation and Setup
 
-## Installation and Setup
+Clone repository:
 
-1. Clone this repository:
-
-```bash
 git clone https://github.com/fauziahmstf/air-quality-app.git
-```
 
-2. Navigate to the project directory:
+Masuk ke direktori project:
 
-```bash
 cd air-quality-app
-```
 
-3. Install dependencies:
+Install dependencies:
 
-```bash
 flutter pub get
-```
 
-4. Run the application:
+Jalankan aplikasi:
 
-```bash
 flutter run
-```
 
-## Build APK
+Testing
 
-To generate a release APK, run:
+Jalankan perintah berikut untuk memeriksa kode dan menjalankan pengujian:
 
-```bash
-flutter build apk --release
-```
-
-The generated APK can be found at:
-
-```text
-build/app/outputs/flutter-apk/app-release.apk
-```
-
-## Testing
-
-Run the following commands to check the project:
-
-```bash
 flutter analyze
 flutter test
-```
 
-## Project Information
+Build APK
 
-**Project:** Air Quality App  
-**Framework:** Flutter  
-**Language:** Dart  
-**Platform:** Android
+Untuk membuat APK versi release:
 
-Developed as an individual assignment for the Mobile Programming course.
+flutter build apk --release
+
+File APK akan tersedia di:
+
+build/app/outputs/flutter-apk/app-release.apk
+
+License
+
+This project was developed for an individual Mobile Programming course assignment.
